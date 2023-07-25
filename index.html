@@ -11,6 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- font awsome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Daisy ui cdn link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
@@ -31,14 +39,82 @@
       };
     </script>
     <style>
-        .marrope-font{
-            font-family: 'Manrope', sans-serif;
-        }
+      .manrope-font {
+        font-family: "Manrope", sans-serif;
+      }
     </style>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="manrope-font">
+    <header>
+      <div class="hero">
+        <div class="hero-content flex flex-col lg:flex-row md:flex-col-2 gap-10">
+          <div>
+            <h1 class=" lg:text-7xl text-3xl font-bold">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-info">Explore More</button>
+          </div>
+          <div>
+            <img
+              src="/images///banner.png"
+              class="max-w-sm rounded-lg"
+            />
+            <div class="-mt-24 flex gap-8 items-center drop-shadow-2xl bg-white p-5 w-64">
+              <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+              <div class=" ">
+                <h3 class="text-3xl">5.00</h3>
+                <p>Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- featured products -->
+      <section class="container mx-auto text-center my-24">
+
+      <h3 class="font-extrabold text-5xl mb-5">Our Featured Products</h3>
+      <p class="max-w-5xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-16 gap-6">
+
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="/images//tea-1.png" alt="tea" /></figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center text-3xl">Milk tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="/images//tea-2.png" alt="tea" /></figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center text-3xl">Black tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="/images//tea-3.png" alt="tea" /></figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center text-3xl">Lemon tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl">
+          <figure><img src="/images//tea-4.png" alt="tea" /></figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center text-3xl">Green tea</h2>
+            <p>Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
     <footer></footer>
   </body>
 </html>
